@@ -18,7 +18,7 @@ Dans Claude Code :
 
 ```
 /plugin marketplace add alexbrndl/claude-skills
-/plugin install design-skills@claude-skills
+/plugin install design-skills@alexbrndl-skills
 ```
 
 Puis recharger :
@@ -40,7 +40,7 @@ Claude les invoque aussi automatiquement quand le contexte correspond à leur de
 ### Mettre à jour
 
 ```
-/plugin marketplace update claude-skills
+/plugin marketplace update alexbrndl-skills
 ```
 
 ### Méthode simple — sans plugin (copie ou symlink)
@@ -82,7 +82,7 @@ Claude Code détecte les ajouts dans `~/.claude/skills/` sans redémarrage. **Ex
    ```
 
    La `description` décrit **quand** utiliser le skill (Claude s'en sert pour le déclencher automatiquement), jamais le workflow lui-même.
-3. Commit + push. Les utilisateurs récupèrent le skill via `/plugin marketplace update claude-skills` (méthode plugin) ou un `git pull` (méthode manuelle).
+3. Commit + push. Les utilisateurs récupèrent le skill via `/plugin marketplace update alexbrndl-skills` (méthode plugin) ou un `git pull` (méthode manuelle).
 
 Pas besoin de modifier `marketplace.json` ni `plugin.json` pour un nouveau skill : tout `SKILL.md` placé dans `plugins/design-skills/skills/` est automatiquement inclus dans le plugin `design-skills`. (Crée un nouveau plugin uniquement si tu veux un regroupement séparé.)
 
