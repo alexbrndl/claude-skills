@@ -1,6 +1,6 @@
 ---
 name: brand-illustrations
-description: Use when generating a series of illustrations or brand visuals that must stay visually consistent across images, or when defining a reusable illustration style (style DNA) for a product, blog, or doc.
+description: Use when generating a series of illustrations or brand visuals that must stay visually consistent across images, or when defining a reusable illustration style (style DNA) for a product, blog, or doc. Not for one-off images or editable vector art (work directly in SVG/Figma).
 ---
 
 # Brand illustrations
@@ -13,7 +13,7 @@ This skill is tool-agnostic: it works with any image generation model. It produc
 
 Before generating anything, create or load the style DNA: a separate art-direction document, one per product/blog/series, reused for every image.
 
-- Use `references/style-dna-template.md` as the structure. It covers visual rules (rendering style, line quality, whitespace minimum, canvas ratio), the semantic color code, must/never lists, and an optional recurring element.
+- Load `references/style-dna-template.md` for the structure. It covers visual rules (rendering style, line quality, whitespace minimum, canvas ratio), the semantic color code, must/never lists, and an optional recurring element.
 - **Ground it on the brand's real assets when they exist.** If the illustrations represent a real brand or product, find and use the actual logo, product renders, UI screenshots, and brand palette before inventing a look. A brand is recognized by its assets first, its color values last. Do not substitute a generic style or a hand-drawn silhouette for a real product image: that produces a "generic tech illustration" that any brand could have. If you cannot find the assets, ask the user for them rather than filling with generic placeholders.
 - The semantic color code is the backbone of consistency: each color carries exactly one fixed role (structure / flow / alert / secondary state) across the whole series, never two.
 
