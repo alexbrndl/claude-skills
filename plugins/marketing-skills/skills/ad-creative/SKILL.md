@@ -295,7 +295,7 @@ When iterating, include a summary:
 
 ## Batch Generation Workflow
 
-For large-scale creative production (Anthropic's growth team generates 100+ variations per cycle):
+For large-scale creative production (100+ variations per cycle):
 
 ### 1. Break into sub-tasks
 - **Headline generation** — Focused on click-through

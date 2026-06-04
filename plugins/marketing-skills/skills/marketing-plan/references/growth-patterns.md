@@ -2,8 +2,6 @@
 
 The 12-month outlook in every plan (Section 10) describes a trajectory. This doc names the shape of that trajectory honestly — what real SaaS growth looks like, when to expect plateaus, and how to plan for the next leg of growth before the current one stalls.
 
-Excerpted and adapted from *Founding Marketing* by Corey Haines.
-
 ## The long, slow SaaS ramp of death
 
 Pitch decks show hockey sticks. Real growth shows a series of S-curves — each representing a distinct phase followed by a plateau that tests resolve and creativity.

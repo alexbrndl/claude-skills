@@ -4,8 +4,6 @@ The problem with most SaaS marketing budgets is that they're pulled out of thin 
 
 Two scientific methods solve this. Use one (not both) in Section 8 (Revenue) and Section 10 (12-month outlook) of every plan.
 
-Excerpted and adapted from *Founding Marketing* by Corey Haines.
-
 ## Method 1 — Revenue-Based (5–40% of annual revenue)
 
 **Direction:** budget → revenue goal.

@@ -29,19 +29,19 @@ Gather this context (ask if not provided):
 3. **Collateral Needs**
    - What specific assets do you need?
    - What stage of the funnel are they for?
-   - Who will use them? (AE, SDR, champion, prospect)
+   - Who will use them? (AE, SDR, champion, prospect — or yourself if selling solo)
 
 4. **Current State**
    - What materials exist today?
    - What's working and what's not?
-   - What do reps ask for most?
+   - What do reps (or you) ask for most?
 
 ---
 
 ## Core Principles
 
 ### Sales Uses What Sales Trusts
-Involve reps in creation. Use their language, not marketing's. If reps rewrite your deck before sending it, you wrote the wrong deck. Test drafts with your top performers first.
+If you have a sales team, involve reps in creation — use their language, not marketing's. If reps rewrite your deck before sending it, you wrote the wrong deck. Test drafts with your top performers first. If you're selling solo, pressure-test drafts against your own real conversations.
 
 ### Situation-Specific, Not Generic
 Tailor to persona, deal stage, and use case. A deck for a CTO should look different from one for a VP of Sales. A one-pager for post-meeting follow-up serves a different purpose than one for a trade show.
@@ -276,13 +276,13 @@ Organize case studies so reps can find the right one instantly:
 
 ### When to Build
 
-- **New product launch** — Reps need a single source of truth
+- **New product launch** — A single source of truth for everyone selling it
 - **New market segment** — Different buyers need different approaches
-- **New hire ramp** — Playbooks cut ramp time significantly
+- **New hire ramp** — Playbooks cut ramp time significantly; also useful as a personal reference when selling solo
 
 ### Keeping It Living
 
-Playbooks die when they're not updated. Review quarterly, get input from top reps, and remove anything outdated. Assign an owner — if nobody owns it, it rots.
+Playbooks die when they're not updated. Review quarterly, remove anything outdated, and (if you have a team) get input from top reps. Assign an owner — if nobody owns it, it rots.
 
 ---
 
@@ -332,7 +332,7 @@ Deliver the right format for each asset type:
 If context is missing, ask:
 
 1. What collateral do you need? (deck, one-pager, objection doc, etc.)
-2. Who will use it? (AE, SDR, champion, prospect)
+2. Who will use it? (AE, SDR, champion, prospect — or yourself if selling solo)
 3. What sales stage is it for? (prospecting, discovery, demo, negotiation, close)
 4. Who is the target persona? (title, seniority, department)
 5. What are the top 3 objections you hear most?

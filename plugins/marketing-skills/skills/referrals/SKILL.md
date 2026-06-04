@@ -177,7 +177,7 @@ Trigger Moment → Share Action → Convert Referred → Reward → (Loop)
 - [ ] Announce to existing customers
 - [ ] Add in-app referral prompts
 - [ ] Update website with program details
-- [ ] Brief support team
+- [ ] Prepare support FAQ / responses for referral questions
 
 ### Post-Launch (First 30 Days)
 - [ ] Review conversion funnel
