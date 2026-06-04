@@ -9,6 +9,21 @@
       "name": "design-skills",
       "source": "./plugins/design-skills",
       "description": "Skills de workflow pour le design assisté par agents (exploration parallèle dans Paper/Figma, etc.)"
+    },
+    {
+      "name": "marketing-skills",
+      "source": "./plugins/marketing-skills",
+      "description": "Skills marketing pour side projects : copywriting, CRO, SEO, pricing, lancement."
+    },
+    {
+      "name": "writing-skills",
+      "source": "./plugins/writing-skills",
+      "description": "Skills d'écriture : prose sans tics d'IA (FR/EN)."
+    },
+    {
+      "name": "ai-engineering-skills",
+      "source": "./plugins/ai-engineering-skills",
+      "description": "Skills de context engineering et construction d'agents."
     }
   ]
 }
