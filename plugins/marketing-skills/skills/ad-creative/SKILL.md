@@ -330,14 +330,14 @@ For large-scale creative production (100+ variations per cycle):
 
 ## Tool Integrations
 
-For pulling performance data and managing campaigns, see the [tools registry](../../tools/REGISTRY.md).
+For pulling performance data and managing campaigns, see the tools registry.
 
-| Platform | Pull Performance Data | Manage Campaigns | Guide |
-|----------|:---------------------:|:----------------:|-------|
-| **Google Ads** | `google-ads campaigns list`, `google-ads reports get` | `google-ads campaigns create` | [google-ads.md](../../tools/integrations/google-ads.md) |
-| **Meta Ads** | `meta-ads insights get` | `meta-ads campaigns list` | [meta-ads.md](../../tools/integrations/meta-ads.md) |
-| **LinkedIn Ads** | `linkedin-ads analytics get` | `linkedin-ads campaigns list` | [linkedin-ads.md](../../tools/integrations/linkedin-ads.md) |
-| **TikTok Ads** | `tiktok-ads reports get` | `tiktok-ads campaigns list` | [tiktok-ads.md](../../tools/integrations/tiktok-ads.md) |
+| Platform | Pull Performance Data | Manage Campaigns |
+| ---------- | :---------------------: | :----------------: |
+| **Google Ads** | `google-ads campaigns list`, `google-ads reports get` | `google-ads campaigns create` |
+| **Meta Ads** | `meta-ads insights get` | `meta-ads campaigns list` |
+| **LinkedIn Ads** | `linkedin-ads analytics get` | `linkedin-ads campaigns list` |
+| **TikTok Ads** | `tiktok-ads reports get` | `tiktok-ads campaigns list` |
 
 ### Workflow: Pull Data, Analyze, Generate
 

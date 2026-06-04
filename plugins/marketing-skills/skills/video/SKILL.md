@@ -325,12 +325,12 @@ Output: Ready-to-publish video
 
 ## Tool Integrations
 
-| Tool | Type | MCP | Guide |
-|------|------|:---:|-------|
-| **HeyGen** | AI avatars | Yes | [heygen.md](../../tools/integrations/heygen.md) |
-| **Hyperframes** | Programmatic video | - | [hyperframes.md](../../tools/integrations/hyperframes.md) |
-| **Remotion** | Programmatic video | - | [remotion.dev](https://www.remotion.dev/docs) |
-| **Runway** | AI generation | - | [runwayml.com/docs](https://docs.dev.runwayml.com) |
+| Tool | Type | MCP |
+| ------ | ------ | :---: |
+| **HeyGen** | AI avatars | Yes |
+| **Hyperframes** | Programmatic video | - |
+| **Remotion** | Programmatic video | - |
+| **Runway** | AI generation | - |
 
 ---
 
