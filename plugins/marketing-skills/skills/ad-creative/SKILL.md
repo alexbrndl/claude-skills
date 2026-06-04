@@ -343,7 +343,7 @@ For pulling performance data and managing campaigns, see the tools registry.
 
 ```bash
 # 1. Pull recent ad performance
-node tools/clis/google-ads.js reports get --type ad_performance --date-range last_30_days
+# (use the Google Ads API or your reporting tool of choice)
 
 # 2. Analyze output (identify top/bottom performers)
 # 3. Feed winning patterns into this skill
