@@ -214,9 +214,7 @@ This skill connects to:
 ## References
 
 Internal references:
-- `researcher/README.md` - Read when implementing the repo-native research-to-skill operating system
-- `researcher/rubrics/harness-change.md` - Read when evaluating changes to an agent harness
-- `researcher/runbooks/autonomous-research-loop.md` - Read when running a source-to-skill loop
+- [Anti-Truncation Prompts](./references/anti-truncation.md) - Read when: an agent in the harness truncates output, delivers placeholder holes (`// rest of code here`), or stops mid-task
 
 External resources:
 - Karpathy `autoresearch` - Constrained autonomous experiment loop with locked evaluation
