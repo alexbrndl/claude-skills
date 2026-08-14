@@ -8,15 +8,15 @@
     {
       "name": "design-eng",
       "source": "./plugins/design-eng",
-      "description": "Design engineering skills and phase commands: direction, review, motion, component reuse, visual value tuning, translated copy. Pulls in the engineering lifecycle as dependencies."
+      "description": "Design engineering skills and phase commands: direction, review, motion, component reuse, visual value tuning, translated copy. No dependencies, the commands name what they call."
     },
     {
       "name": "emilkowalski-skills",
       "source": {
-        "source": "github",
-        "repo": "emilkowalski/skills"
+        "source": "url",
+        "url": "https://github.com/emilkowalski/skills.git"
       },
-      "description": "Emil Kowalski's design engineering and motion skills. Referenced, not copied, so his updates land here."
+      "description": "Emil Kowalski's design engineering and motion skills. Referenced, not copied, so his updates land here. Skip this entry if you already installed them with the skills CLI."
     }
   ]
 }

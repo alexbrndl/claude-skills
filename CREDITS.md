@@ -20,11 +20,11 @@ These are not vendored, so their authors' updates reach you directly and their l
 
 | Source | Author | How it is reached |
 |---|---|---|
-| [emilkowalski/skills](https://github.com/emilkowalski/skills) | Emil Kowalski | Marketplace entry pointing at the repository |
+| [emilkowalski/skills](https://github.com/emilkowalski/skills) | Emil Kowalski | Marketplace entry, explicit HTTPS url |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | Matt Pocock | `/plugin install mattpocock-skills@claude-plugins-official` |
 | [obra/superpowers](https://github.com/obra/superpowers) | Jesse Vincent | `/plugin install superpowers@claude-plugins-official` |
-| [anthropics/skills](https://github.com/anthropics/skills) | Anthropic | Marketplace `claude-plugins-official` |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | Addy Osmani | Marketplace `addyosmani/agent-skills` |
+| [anthropics/skills](https://github.com/anthropics/skills) | Anthropic | `/plugin install example-skills@anthropic-agent-skills` |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | Addy Osmani | `/plugin install agent-skills@addy-agent-skills` |
 | [shadcn-ui/ui](https://github.com/shadcn-ui/ui/tree/main/skills) | shadcn | `npx skills@latest add shadcn-ui/ui`, see README |
 
 ## Removed from this repository

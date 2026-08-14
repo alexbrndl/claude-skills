@@ -11,20 +11,45 @@ The bet is not "more skills". Only skills with automatic invocation compete when
 /plugin install design-eng@alexbrndl-skills
 ```
 
-That is the whole library. It has no dependencies, on purpose: a `dependencies` entry that cannot be resolved disables the plugin that declared it, and none of the skills below are needed for the ten in here to work.
+That is the whole library. It declares no dependencies, on purpose: an unresolved dependency disables the plugin that declared it, and nothing below is needed for the ten skills in here to work.
 
-The commands do call skills from elsewhere, and a command whose step points at a skill you do not have will tell you so instead of skipping it quietly. Install what you want:
+The commands do call skills from elsewhere. Install what you want, in any order. Marketplace names do not always match repository names, so they are spelled out here:
 
 ```
-/plugin install mattpocock-skills@claude-plugins-official   # spec and ticket flows
-/plugin install superpowers@claude-plugins-official          # debugging, verification, code review
-/plugin marketplace add addyosmani/agent-skills              # the engineering lifecycle
-/plugin marketplace add anthropics/knowledge-work-plugins    # accessibility-review, design-handoff
-npx skills@latest add emilkowalski/skills -a claude-code     # motion and UI craft
-npx skills@latest add shadcn-ui/ui -a claude-code            # shadcn, migrate-radix-to-base
+/plugin install superpowers@claude-plugins-official
+/plugin install mattpocock-skills@claude-plugins-official
+/plugin install design@knowledge-work-plugins
+
+/plugin marketplace add anthropics/skills
+/plugin install example-skills@anthropic-agent-skills
+
+/plugin marketplace add addyosmani/agent-skills
+/plugin install agent-skills@addy-agent-skills
+
+/plugin install emilkowalski-skills@alexbrndl-skills
+npx skills@latest add shadcn-ui/ui -a claude-code
 ```
 
-After the two `marketplace add` lines, install the plugin each one carries: open `/plugin`, find it in the list and take the name from there rather than guessing it. Then `/reload-plugins`, or restart, before checking that anything landed.
+Then `/reload-plugins`, or restart, before checking that anything landed.
+
+Emil Kowalski's skills are reachable two ways, this marketplace entry or `npx skills@latest add emilkowalski/skills -a claude-code`. Pick one: installing both puts the same ten skills in two places. If a `github` source ever fails with `Permission denied (publickey)`, it cloned over SSH; `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` switches that, and the entry in this marketplace already uses an explicit HTTPS url.
+
+## Where each command's steps come from
+
+A command step whose skill is missing says so rather than skipping quietly. This is the map, so you can install only the phases you use:
+
+| Source | Skills the commands call |
+|---|---|
+| this repository | `design-direction`, `design-review`, `motion`, `prose`, `reusing-project-components`, `editing-translated-strings`, `tuning-visual-values`, `orchestrating-parallel-design-agents`, `brand-illustrations` |
+| `agent-skills` | `interview-me`, `spec-driven-development`, `planning-and-task-breakdown`, `frontend-ui-engineering`, `incremental-implementation`, `browser-testing-with-devtools`, `code-review-and-quality`, `git-workflow-and-versioning`, `shipping-and-launch`, `documentation-and-adrs` |
+| `emilkowalski-skills` | `animate`, `apple-design`, `review-animations`, `pick-ui-library` |
+| `superpowers` | `systematic-debugging`, `verification-before-completion` |
+| `design` | `accessibility-review`, `design-handoff` |
+| `example-skills` | `webapp-testing` |
+| `mattpocock-skills` | `prototype` |
+| shadcn | `shadcn`, `migrate-radix-to-base` |
+
+`prototype` exists in both `mattpocock-skills` and `emilkowalski-skills`, and which one answers `/prototype` when both are installed is not documented. If `/define` gives you the wrong one, invoke it namespaced.
 
 ## The four commands
 
@@ -58,7 +83,7 @@ Ten, in this repository.
 | `tuning-visual-values` | Review | A value that renders but looks wrong, and no documented band covers it |
 | `including-project-skills` | All | Called by the commands, folds the project's own skills into the phase running |
 
-Everything else comes from the dependencies: the engineering lifecycle from `agent-skills`, spec and ticket flows from `mattpocock-skills`, debugging and code review from `superpowers`, `webapp-testing` from `example-skills`, motion and UI craft from `emilkowalski-skills`.
+Everything else the commands call lives elsewhere, see the map above.
 
 ## Where the numbers live
 
