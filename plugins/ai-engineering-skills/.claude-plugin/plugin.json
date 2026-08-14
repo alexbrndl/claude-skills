@@ -1,6 +1,0 @@
-{
-  "name": "ai-engineering-skills",
-  "description": "Skills de context engineering et construction d'agents : contexte, tools, mémoire, évaluation. Adaptés depuis Agent-Skills-for-Context-Engineering (MIT).",
-  "version": "0.1.0",
-  "author": { "name": "Alexandre Brondel" }
-}

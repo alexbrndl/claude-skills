@@ -1,243 +1,95 @@
-# claude-skills
+# design-eng
 
-Collection de **skills Claude Code** partagés par l'équipe. Chaque skill est un guide réutilisable que Claude charge automatiquement quand la situation s'y prête.
+Design engineering skills for Claude Code. Ten skills I own, four commands that wrap the lifecycle, and the rest referenced from the people who maintain it better than I would.
 
-Le repo est packagé comme une **marketplace de plugins** : on l'installe en une commande et on reçoit les skills voulus, avec mises à jour via git. Une méthode d'installation manuelle (sans plugin) est aussi documentée plus bas.
+The bet is not "more skills". Only skills with automatic invocation compete when Claude picks one, so every skill you install makes the next choice slightly worse. This library carries what I actually use and declares the rest.
 
-Les skills sont adaptés de projets open source, voir [CREDITS.md](CREDITS.md).
-
-## Skills disponibles
-
-Le repo contient 4 plugins indépendants, soit **64 skills** au total. Installez uniquement ce dont vous avez besoin.
-
----
-
-### design-skills (5 skills)
-
-Skills pour la direction artistique, la revue de design, le motion et la coordination d'agents de design en parallèle.
-
-| Skill | À quoi il sert |
-|-------|----------------|
-| `brand-illustrations` | Générer une série d'illustrations visuellement cohérentes ou définir un style DNA réutilisable pour un produit. |
-| `design-direction` | Choisir la direction visuelle d'un écran, site ou composant avant de coder ou travailler sur canvas. |
-| `design-review` | Critiquer une UI existante (code, screenshot, page live) pour qualité visuelle, accessibilité et polish. |
-| `motion` | Ajouter, revoir ou déboguer des animations et transitions (CSS, Vue Transition, GSAP, scroll-driven). |
-| `orchestrating-parallel-design-agents` | Lancer plusieurs agents en parallèle pour explorer des directions de design dans un fichier partagé (Paper, Figma) sans collision. |
-
----
-
-### marketing-skills (43 skills)
-
-Skills couvrant l'ensemble du funnel marketing : acquisition, activation, rétention, copywriting, SEO, emails, publicité et plus.
-
-| Skill | À quoi il sert |
-|-------|----------------|
-| `ab-testing` | Planifier et concevoir des A/B tests ou un programme d'expérimentation growth. |
-| `ad-creative` | Générer et itérer du copy publicitaire (headlines, descriptions, variations) pour toutes les plateformes. |
-| `ads` | Stratégie et optimisation de campagnes payantes (Google, Meta, LinkedIn, Twitter/X). |
-| `ai-seo` | Optimiser le contenu pour les moteurs de recherche IA (AI Overviews, Perplexity, citations LLM). |
-| `analytics` | Mettre en place ou auditer le tracking et la mesure marketing (GA4, GTM, Mixpanel, Segment). |
-| `aso` | Auditer et optimiser une fiche App Store ou Google Play. |
-| `churn-prevention` | Réduire le churn : flows d'annulation, save offers, dunning, win-back. |
-| `co-marketing` | Trouver des partenaires co-marketing et planifier des campagnes conjointes. |
-| `cold-email` | Rédiger des emails de prospection outbound et des séquences de cold outreach. |
-| `community-marketing` | Créer une stratégie de communauté (Discord, Slack, forum) et activer la croissance community-led. |
-| `competitor-profiling` | Rechercher et profiler des concurrents à partir de leurs URLs. |
-| `competitors` | Créer des pages comparatives et alternatives pour le SEO et les ventes. |
-| `content-strategy` | Planifier une stratégie de contenu : piliers, clusters, calendrier éditorial. |
-| `copy-editing` | Editer, améliorer ou rafraîchir du copy marketing existant. |
-| `copywriting` | Rédiger ou réécrire du copy marketing pour toute page (homepage, landing, pricing, features). |
-| `cro` | Optimiser les conversions sur des pages et formulaires marketing. |
-| `customer-research` | Conduire ou synthétiser de la recherche client (interviews, transcripts, review mining, JTBD). |
-| `directory-submissions` | Soumettre un produit aux répertoires SaaS, AI, startup pour des backlinks et de la visibilité. |
-| `emails` | Créer des séquences email automatisées (onboarding, nurture, re-engagement). |
-| `free-tools` | Planifier et évaluer un outil gratuit comme levier marketing (calculateur, générateur, audit tool). |
-| `image` | Créer, générer ou optimiser des images marketing (hero, social, mockup, OG image). |
-| `launch` | Planifier le lancement d'un produit ou d'une feature (checklist, GTM, Product Hunt). |
-| `lead-magnets` | Créer et distribuer des lead magnets pour la capture d'emails (ebook, template, checklist). |
-| `marketing-ideas` | Générer des idées et stratégies marketing pour un produit SaaS. |
-| `marketing-plan` | Produire un plan marketing exhaustif structuré par AARRR pour un client ou produit. |
-| `marketing-psychology` | Appliquer les principes de psychologie et de behavioral science au marketing. |
-| `onboarding` | Optimiser l'onboarding post-signup, l'activation utilisateur et le time-to-value. |
-| `paywalls` | Créer ou optimiser des paywalls et écrans d'upgrade in-app. |
-| `popups` | Créer ou optimiser des popups, modals et banners de conversion. |
-| `pricing` | Stratégie de pricing, packaging et monétisation. |
-| `product-marketing` | Créer un document de contexte produit-marketing (positioning, ICP, audience). |
-| `programmatic-seo` | Créer des pages SEO à grande échelle via templates et données. |
-| `prospecting` | Trouver et qualifier des listes de prospects (B2B SaaS, B2B, PME locales). |
-| `referrals` | Créer ou optimiser un programme de referral, d'affiliation ou de bouche-à-oreille. |
-| `revops` | Revops : lead scoring, routing, pipeline, handoff marketing-ventes. |
-| `sales-enablement` | Créer des supports de vente (deck, one-pager, objection handling, script de démo). |
-| `schema` | Ajouter ou corriger du schema markup et des données structurées (JSON-LD, rich snippets). |
-| `seo-audit` | Auditer et diagnostiquer les problèmes SEO d'un site. |
-| `signup` | Optimiser les flows d'inscription et de création de compte. |
-| `site-architecture` | Planifier ou restructurer l'arborescence, la navigation et le maillage interne d'un site. |
-| `sms` | Planifier et construire des campagnes et séquences SMS/MMS marketing. |
-| `social` | Créer et optimiser du contenu pour les réseaux sociaux (LinkedIn, Twitter/X, Instagram, TikTok). |
-| `video` | Créer ou produire des vidéos avec des outils IA (Remotion, HeyGen, Runway, Veo, etc.). |
-
----
-
-### writing-skills (1 skill)
-
-| Skill | À quoi il sert |
-|-------|----------------|
-| `prose` | Rédiger ou éditer de la prose en français ou anglais pour supprimer les tournures IA et resserrer le texte. |
-
----
-
-### ai-engineering-skills (15 skills)
-
-Skills pour concevoir des systèmes à base de LLM : context engineering, multi-agent, évaluation, mémoire et infrastructure d'agents.
-
-| Skill | À quoi il sert |
-|-------|----------------|
-| `advanced-evaluation` | Systèmes d'évaluation LLM-as-judge : scoring, comparaison par paires, calibration de rubriques. |
-| `bdi-mental-states` | Modéliser les états mentaux d'agents avec les concepts BDI (beliefs, desires, intentions). |
-| `context-compression` | Compression et summarisation de contexte pour les sessions longues et les handoffs entre agents. |
-| `context-degradation` | Diagnostiquer et corriger les défaillances de contexte (lost-in-middle, context poisoning, attention failures). |
-| `context-fundamentals` | Concepts fondamentaux du context engineering : anatomie d'une context window, mécanique de l'attention. |
-| `context-optimization` | Optimiser l'efficacité du contexte : budgeting, KV-cache, retrieval scoping, réduction des tokens. |
-| `evaluation` | Construire des systèmes d'évaluation d'agents : checks déterministes, suites de régression, monitoring. |
-| `filesystem-context` | Contexte stocké sur fichier : scratchpads durables, offloading d'outputs, handoff cross-agents. |
-| `harness-engineering` | Concevoir des harnesses d'agents autonomes : research loops, surfaces verrouillées, rollback, approbation humaine. |
-| `hosted-agents` | Infrastructure d'agents hébergés : exécution sandboxée, session persistence, agents auto-spawning. |
-| `latent-briefing` | Partager de la mémoire entre agents via KV cache et latent briefing pour réduire les tokens workers. |
-| `memory-systems` | Mémoire sémantique persistante pour agents : rétention cross-session, entity tracking, graph/vector retrieval. |
-| `multi-agent-patterns` | Concevoir des systèmes multi-agents : isolation de contexte, coordination supervisor/swarm, handoffs. |
-| `project-development` | Décisions de niveau projet sur les systèmes LLM : pipeline multi-étapes, coûts tokens, structured output. |
-| `tool-design` | Couche interface des outils d'agents : tool descriptions, schemas, formats de réponse, MCP server design. |
-
----
-
-## Installation
-
-### Méthode recommandée : via plugin (une commande)
-
-Les 4 plugins sont **indépendants** : installez uniquement ceux dont vous avez besoin.
-
-Dans Claude Code, ajoutez d'abord la marketplace :
+## Install
 
 ```
-/plugin marketplace add alexbrndl/claude-skills
+/plugin marketplace add alexbrndl/design-eng
+/plugin install design-eng@alexbrndl-skills
 ```
 
-Puis installez le ou les plugins voulus :
+Four plugins install alongside it as declared dependencies: `mattpocock-skills`, `superpowers`, `example-skills` and `agent-skills`. They stay under their authors' control and update on their own.
+
+Two things are not dependencies, because they ship skills without shipping a plugin:
 
 ```
-/plugin install design-skills@alexbrndl-skills
-/plugin install marketing-skills@alexbrndl-skills
-/plugin install writing-skills@alexbrndl-skills
-/plugin install ai-engineering-skills@alexbrndl-skills
+/plugin install emilkowalski-skills@alexbrndl-skills
+npx skills@latest add shadcn/ui -a claude-code
 ```
 
-Puis rechargez :
+`agent-skills` lives in its own marketplace. If the install reports it as missing, add it first:
 
 ```
-/reload-plugins
+/plugin marketplace add addyosmani/agent-skills
 ```
 
-Les skills sont alors disponibles, *namespacés* sous le nom du plugin, par exemple :
+## The four commands
+
+Commands are the point of the library. They wrap the phases so you type one thing instead of remembering forty skill names, and each one calls the skills of its phase in order.
+
+| Command | Phase | What it does |
+|---|---|---|
+| `/define` | Define, Plan | Settles intent and visual direction, then cuts the work into slices that ship on their own |
+| `/build` | Build | Searches for what already exists before writing, then implements one slice |
+| `/review` | Verify, Review | Drives it in a browser first, then the isolated checklist and judgment passes |
+| `/ship` | Ship | Commits, hands off, and writes down the decision someone will question later |
+
+Each command stops at the first question only you can answer.
+
+Each one also starts by looking at the repository it is running in. If the project ships skills of its own in `.claude/skills/`, the ones whose moment falls in the command's phase run alongside the library's. When a project skill and a library skill claim the same moment, the project's wins and the library one is skipped, and the command says which. That rule lives in `including-project-skills`, not copied into each command.
+
+## The skills
+
+Ten, in this repository.
+
+| Skill | Phase | When it fires |
+|---|---|---|
+| `design-direction` | Define | Choosing the visual direction of a screen or component before coding |
+| `orchestrating-parallel-design-agents` | Plan | Exploring several directions in one shared file without collision |
+| `reusing-project-components` | Build | Before adding interface code, and when the same shape appears a third time |
+| `motion` | Build | Adding, reviewing or debugging animation and transitions |
+| `brand-illustrations` | Build | A coherent illustration series, or a reusable Style DNA |
+| `editing-translated-strings` | Build | Copy that exists in several locales, including RTL and formats |
+| `prose` | Build | Anything a human reads, without the AI tics |
+| `design-review` | Review | Critiquing an existing UI before shipping |
+| `tuning-visual-values` | Review | A value that renders but looks wrong, and no documented band covers it |
+| `including-project-skills` | All | Called by the commands, folds the project's own skills into the phase running |
+
+Everything else comes from the dependencies: the engineering lifecycle from `agent-skills`, spec and ticket flows from `mattpocock-skills`, debugging and code review from `superpowers`, `webapp-testing` from `example-skills`, motion and UI craft from `emilkowalski-skills`.
+
+## Where the numbers live
+
+Two reference files hold every threshold, so no skill invents a value:
+
+- `design-review/references/thresholds.md` for contrast, line length, type scale, touch targets, breakpoints, dark mode
+- `motion/references/timing.md` for the duration ladder, stagger, waiting states, gesture
+
+`tuning-visual-values` is the method for the values those two files do not cover: render three candidates, bisect, anchor on a ratio, use the token if one exists.
+
+## Add a skill
 
 ```
-/design-skills:orchestrating-parallel-design-agents
-/marketing-skills:copywriting
-/ai-engineering-skills:multi-agent-patterns
+plugins/design-eng/skills/<name>/
+├── SKILL.md          # required, frontmatter with name + description
+├── references/       # loaded on demand
+└── scripts/          # executable, no context cost until run
 ```
 
-Claude les invoque aussi automatiquement quand le contexte correspond à leur description.
+The `description` is the only lever on when the skill fires. Write it as the moment it serves, and end it with what it is *not* for, pointing at the skill that is. Two descriptions that name the same moment are a collision, and the routing will pick between them at random.
 
-> Prérequis : Claude Code **v2.1.145+** (support des skills dans les plugins).
+Add `disable-model-invocation: true` to anything with a side effect or anything you want to control the timing of. It costs nothing at routing and stays available as `/name`.
 
-### Mettre à jour
-
-```
-/plugin marketplace update alexbrndl-skills
-```
-
-### Méthode simple : sans plugin (copie ou symlink)
-
-Pour installer un seul skill sans passer par le système de plugins, copiez son dossier dans `~/.claude/skills/` :
-
-```bash
-# Cloner le repo une fois
-git clone https://github.com/alexbrndl/claude-skills.git
-
-# Copier un skill dans ses skills personnels
-cp -r claude-skills/plugins/design-skills/skills/orchestrating-parallel-design-agents \
-      ~/.claude/skills/orchestrating-parallel-design-agents
-```
-
-Ou en **symlink** (le skill reste synchronisé avec le repo quand vous `git pull`) :
-
-```bash
-ln -s "$(pwd)/claude-skills/plugins/design-skills/skills/orchestrating-parallel-design-agents" \
-      ~/.claude/skills/orchestrating-parallel-design-agents
-```
-
-Claude Code détecte les ajouts dans `~/.claude/skills/` sans redémarrage. **Exception** : si le dossier `~/.claude/skills/` n'existait pas encore au lancement, redémarrez Claude Code après l'avoir créé.
-
-## Ajouter un nouveau skill
-
-1. Crée le dossier : `plugins/<nom-du-plugin>/skills/<nom-du-skill>/SKILL.md`
-   (nom en kebab-case, verbe d'action de préférence, ex. `<gerund>-<objet>`).
-2. Le `SKILL.md` commence par un frontmatter YAML :
-
-   ```yaml
-   ---
-   name: nom-du-skill
-   description: Use when [conditions de déclenchement et symptômes, PAS le déroulé du skill]
-   ---
-
-   # Nom du skill
-   ...
-   ```
-
-   La `description` décrit **quand** utiliser le skill (Claude s'en sert pour le déclencher automatiquement), jamais le workflow lui-même.
-3. Commit + push. Les utilisateurs récupèrent le skill via `/plugin marketplace update alexbrndl-skills` (méthode plugin) ou un `git pull` (méthode manuelle).
-
-Pas besoin de modifier `marketplace.json` ni `plugin.json` pour un nouveau skill : tout `SKILL.md` placé dans `plugins/<plugin>/skills/` est automatiquement inclus dans le plugin correspondant. (Crée un nouveau plugin uniquement si tu veux un regroupement séparé.)
-
-## Structure du repo
+Then:
 
 ```
-claude-skills/
-├── .claude-plugin/
-│   └── marketplace.json                 # Catalogue de la marketplace
-├── plugins/
-│   ├── design-skills/
-│   │   ├── .claude-plugin/
-│   │   │   └── plugin.json
-│   │   └── skills/
-│   │       ├── brand-illustrations/
-│   │       ├── design-direction/
-│   │       ├── ...                      # 5 skills au total
-│   │       └── orchestrating-parallel-design-agents/
-│   ├── marketing-skills/
-│   │   ├── .claude-plugin/
-│   │   │   └── plugin.json
-│   │   └── skills/
-│   │       ├── ab-testing/
-│   │       ├── copywriting/
-│   │       └── ...                      # 43 skills au total
-│   ├── writing-skills/
-│   │   ├── .claude-plugin/
-│   │   │   └── plugin.json
-│   │   └── skills/
-│   │       └── prose/                   # 1 skill
-│   └── ai-engineering-skills/
-│       ├── .claude-plugin/
-│       │   └── plugin.json
-│       └── skills/
-│           ├── context-fundamentals/
-│           ├── multi-agent-patterns/
-│           └── ...                      # 15 skills au total
-├── CREDITS.md
-└── README.md
+scripts/validate-skills.sh
 ```
 
-## Références
+It checks the frontmatter, the 500-line ceiling, self-promotional links, and flags descriptions that overlap an existing skill.
 
-- Skills : https://code.claude.com/docs/en/skills
-- Plugins : https://code.claude.com/docs/en/plugins
-- Marketplaces : https://code.claude.com/docs/en/plugin-marketplaces
+## Licence
+
+MIT, see `LICENSE`. Derived content keeps its original licence, see `CREDITS.md`. The Apache 2.0 licence of `impeccable` requires its attribution be preserved.
