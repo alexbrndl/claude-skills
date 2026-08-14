@@ -27,3 +27,5 @@ Stop at the first step that produces a question only I can answer, ask it, and w
 ## Before you hand it back
 
 State the direction in one paragraph, the slices in order, and the single decision you had to make on my behalf. If the answer to "what does the first slice ship?" is not a sentence, the plan is not done.
+
+A `/skill` above that does not exist on this machine is a missing install, not a step to skip. Name it, point at the Install section of the design-eng README, and carry on with the rest.

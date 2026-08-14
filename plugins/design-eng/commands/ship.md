@@ -24,3 +24,5 @@ Ship: $ARGUMENTS
 ## Before you hand it back
 
 The branch, the commits in order, and the one line I would paste into Slack. If a decision was made along the way that is not written down anywhere, write it down now.
+
+A `/skill` above that does not exist on this machine is a missing install, not a step to skip. Name it, point at the Install section of the design-eng README, and carry on with the rest.

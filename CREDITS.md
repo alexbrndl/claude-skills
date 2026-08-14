@@ -16,16 +16,16 @@ Full licence texts live in the source repositories. The Apache 2.0 licence of `i
 
 ## Referenced, not copied
 
-These are declared in `.claude-plugin/marketplace.json` or in the plugin's `dependencies` rather than vendored, so their authors' updates reach you directly and their licences stay with them.
+These are not vendored, so their authors' updates reach you directly and their licences stay with them. The commands call their skills by name; the README says how to install each one.
 
 | Source | Author | How it is reached |
 |---|---|---|
 | [emilkowalski/skills](https://github.com/emilkowalski/skills) | Emil Kowalski | Marketplace entry pointing at the repository |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | Matt Pocock | `dependencies: mattpocock-skills` |
-| [obra/superpowers](https://github.com/obra/superpowers) | Jesse Vincent | `dependencies: superpowers` |
-| [anthropics/skills](https://github.com/anthropics/skills) | Anthropic | `dependencies: example-skills` |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | Addy Osmani | `dependencies: agent-skills` |
-| [shadcn-ui/ui](https://github.com/shadcn-ui/ui/tree/main/skills) | shadcn | `npx skills@latest add shadcn/ui`, see README |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | Matt Pocock | `/plugin install mattpocock-skills@claude-plugins-official` |
+| [obra/superpowers](https://github.com/obra/superpowers) | Jesse Vincent | `/plugin install superpowers@claude-plugins-official` |
+| [anthropics/skills](https://github.com/anthropics/skills) | Anthropic | Marketplace `claude-plugins-official` |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | Addy Osmani | Marketplace `addyosmani/agent-skills` |
+| [shadcn-ui/ui](https://github.com/shadcn-ui/ui/tree/main/skills) | shadcn | `npx skills@latest add shadcn-ui/ui`, see README |
 
 ## Removed from this repository
 

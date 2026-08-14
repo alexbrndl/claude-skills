@@ -11,20 +11,20 @@ The bet is not "more skills". Only skills with automatic invocation compete when
 /plugin install design-eng@alexbrndl-skills
 ```
 
-Four plugins install alongside it as declared dependencies: `mattpocock-skills`, `superpowers`, `example-skills` and `agent-skills`. They stay under their authors' control and update on their own.
+That is the whole library. It has no dependencies, on purpose: a `dependencies` entry that cannot be resolved disables the plugin that declared it, and none of the skills below are needed for the ten in here to work.
 
-Two things are not dependencies, because they ship skills without shipping a plugin:
-
-```
-/plugin install emilkowalski-skills@alexbrndl-skills
-npx skills@latest add shadcn/ui -a claude-code
-```
-
-`agent-skills` lives in its own marketplace. If the install reports it as missing, add it first:
+The commands do call skills from elsewhere, and a command whose step points at a skill you do not have will tell you so instead of skipping it quietly. Install what you want:
 
 ```
-/plugin marketplace add addyosmani/agent-skills
+/plugin install mattpocock-skills@claude-plugins-official   # spec and ticket flows
+/plugin install superpowers@claude-plugins-official          # debugging, verification, code review
+/plugin marketplace add addyosmani/agent-skills              # the engineering lifecycle
+/plugin marketplace add anthropics/knowledge-work-plugins    # accessibility-review, design-handoff
+npx skills@latest add emilkowalski/skills -a claude-code     # motion and UI craft
+npx skills@latest add shadcn-ui/ui -a claude-code            # shadcn, migrate-radix-to-base
 ```
+
+After the two `marketplace add` lines, install the plugin each one carries: open `/plugin`, find it in the list and take the name from there rather than guessing it. Then `/reload-plugins`, or restart, before checking that anything landed.
 
 ## The four commands
 

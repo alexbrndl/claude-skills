@@ -25,3 +25,5 @@ Build: $ARGUMENTS
 ## Before you hand it back
 
 The diff, what you reused, what you created and why nothing existing fit. If you created something that is 80% of an existing component, revert and extend the existing one instead.
+
+A `/skill` above that does not exist on this machine is a missing install, not a step to skip. Name it, point at the Install section of the design-eng README, and carry on with the rest.

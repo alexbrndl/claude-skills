@@ -29,3 +29,5 @@ Verify comes before Review. A design critique on something that does not work wa
 ## Before you hand it back
 
 One ranked list, not two. Each finding is a file or element, the problem, and the concrete fix. Say where the checklist and your judgment disagreed, and which checklist hit is a false positive in this context.
+
+A `/skill` above that does not exist on this machine is a missing install, not a step to skip. Name it, point at the Install section of the design-eng README, and carry on with the rest.
