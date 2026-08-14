@@ -10,7 +10,7 @@ Stop at the first step that produces a question only I can answer, ask it, and w
 
 ## First
 
-0. `/including-project-skills Define Plan`. If this repository ships its own skills, the ones that belong to these two phases run alongside the list below. On a collision, the project's skill wins and the library one is skipped.
+0. `/including-project-skills Define Plan`. If this repository declares a map of its own skills in `.claude/design-eng.md`, the ones it lists for these phases run after the library's, and a line marked `— replaces` drops the library skill it names. No map means nothing is added: do not infer one.
 
 ## Define
 

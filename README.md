@@ -64,7 +64,7 @@ Commands are the point of the library. They wrap the phases so you type one thin
 
 Each command stops at the first question only you can answer.
 
-Each one also starts by looking at the repository it is running in. If the project ships skills of its own in `.claude/skills/`, the ones whose moment falls in the command's phase run alongside the library's. When a project skill and a library skill claim the same moment, the project's wins and the library one is skipped, and the command says which. That rule lives in `including-project-skills`, not copied into each command.
+Each one also reads `.claude/design-eng.md` if the repository has one: a short map declaring which of the project's own skills belong to which phase, and which of the library's they replace. No map means the command runs its own skills and says so. It does not infer a mapping from the project's skill descriptions, because that was measured twice and both times it pulled in steps that had no business running, including ones that commit and push. `/including-project-skills --draft` proposes a map for you to cut down.
 
 ## The skills
 

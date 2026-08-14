@@ -8,7 +8,7 @@ Ship: $ARGUMENTS
 
 ## First
 
-0. `/including-project-skills Ship`. If this repository ships its own skills, the ones that belong to Ship run alongside the list below. On a collision, the project's skill wins and the library one is skipped. Release process is the thing teams specialise most, so expect one here.
+0. `/including-project-skills Ship`. If this repository declares a map of its own skills in `.claude/design-eng.md`, the ones it lists for this phase run after the library's, and a line marked `— replaces` drops the library skill it names. No map means nothing is added: do not infer one.
 
 ## Get it out
 

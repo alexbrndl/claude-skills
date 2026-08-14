@@ -8,7 +8,7 @@ Build: $ARGUMENTS
 
 ## First
 
-0. `/including-project-skills Build`. If this repository ships its own skills, the ones that belong to Build run alongside the list below. On a collision, the project's skill wins and the library one is skipped. This is the phase where it happens most: a codebase with a design system usually has its own version of step 1.
+0. `/including-project-skills Build`. If this repository declares a map of its own skills in `.claude/design-eng.md`, the ones it lists for this phase run after the library's, and a line marked `— replaces` drops the library skill it names. No map means nothing is added: do not infer one.
 
 ## Before writing anything
 

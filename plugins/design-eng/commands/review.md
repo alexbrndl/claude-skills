@@ -10,7 +10,7 @@ Verify comes before Review. A design critique on something that does not work wa
 
 ## First
 
-0. `/including-project-skills Verify Review`. If this repository ships its own skills, the ones that belong to these two phases run alongside the list below. On a collision, the project's skill wins and the library one is skipped.
+0. `/including-project-skills Verify Review`. If this repository declares a map of its own skills in `.claude/design-eng.md`, the ones it lists for these phases run after the library's, and a line marked `— replaces` drops the library skill it names. No map means nothing is added: do not infer one.
 
 ## Verify
 
