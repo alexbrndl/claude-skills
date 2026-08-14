@@ -1,6 +1,6 @@
 ---
 name: reusing-project-components
-description: Search the codebase for an existing component before writing a new one, and pull a repeated pattern into a shared component once it has appeared three times. Use whenever the task is to add or change a piece of interface: a card, a modal, a table, a form field, an empty state, a badge, a toolbar. Also use when the user says a screen looks inconsistent with the rest of the app, or asks whether something already exists, or asks to factor out duplication. Not for choosing a third-party UI library, and not for design system documentation.
+description: Search the codebase for an existing component before writing a new one, and pull a repeated pattern into a shared component once it has appeared three times. Use before writing any interface code, a card, a modal, a table, a form field, an empty state, a badge, a toolbar, and use it even when a quick grep looks like it would settle the question: the component you want is usually named something you would not have searched for, an empty state living in Placeholder, in BlankSlate, or as a prop on Table, so a single-name grep concludes it does not exist and a duplicate gets written. Also use when a screen looks inconsistent with the rest of the app, when asked whether something already exists, or when asked to factor out duplication. Not for choosing a third-party UI library, and not for design system documentation.
 ---
 
 # Reuse before writing, extract after repeating

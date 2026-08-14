@@ -94,6 +94,16 @@ Two reference files hold every threshold, so no skill invents a value:
 
 `tuning-visual-values` is the method for the values those two files do not cover: render three candidates, bisect, anchor on a ratio, use the token if one exists.
 
+## What was measured
+
+Trigger rates come from 36 real `claude -p` sessions over six prompts, three of which should fire a skill and three of which should not, on a fixture with three screens sharing a duplicated empty state, three locales, and a spacing token file.
+
+The result was 2 correct out of 6 with everything installed, and 4 out of 6 with `superpowers` disabled. Two failures were the descriptions and are fixed: `tuning-visual-values` claimed text contrast, which has a hard threshold rather than a taste range, and `reusing-project-components` never fired at all, because nothing in its description said that a single-name grep concludes a component does not exist when it does. The other two failures are `superpowers:brainstorming` preempting, which no description here can fix. If it happens to you, `/skills` can set that one to `off` for a project.
+
+Two things this does not measure: what the skills do once they fire, and anything about the other seven. And `skill-creator`'s `run_eval.py` cannot measure a skill that is already installed, it reported 5/6 for all three with zero triggers detected anywhere.
+
+Six steps across `build.md` and `ship.md` resolve to nothing on a machine with only the plugin installed, so a plan is shorter than the command reads. Install from the list above, or expect the command to name what is missing.
+
 ## Add a skill
 
 ```

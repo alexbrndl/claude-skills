@@ -1,6 +1,6 @@
 ---
 name: tuning-visual-values
-description: Adjust a numeric visual value that already renders but looks wrong. Use whenever the work is choosing a number for spacing, radius, blur, opacity, shadow, font size, line height, duration or easing, and the user says something is too big, too tight, too slow, too heavy, or just off. Also use when the user asks what value to pick, or asks to make something feel better without naming a number. Not for choosing which component to use, and not for animation vocabulary or easing theory: this skill is only about landing on the number.
+description: Adjust a numeric visual value that already renders but looks wrong. Use whenever the work is choosing a number for spacing, radius, blur, opacity, shadow, font size, line height, duration or easing, and the user says something is too big, too tight, too slow, too heavy, or just off. Also use when the user asks what value to pick, or asks to make something feel better without naming a number. Not for a value that has a documented band rather than a taste range: text contrast, colour lightness, touch target, line length and breakpoints are checked against design-review's thresholds, where the work is to comply and not to choose. Not for choosing which component to use, and not for animation vocabulary or easing theory: this skill is only about landing on the number.
 ---
 
 # Tuning a visual value

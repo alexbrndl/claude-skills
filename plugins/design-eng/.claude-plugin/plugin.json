@@ -1,7 +1,7 @@
 {
   "name": "design-eng",
   "description": "Design engineering skills for shipping interfaces: visual direction, design review, motion, component reuse, visual value tuning, translated copy, and prose. Four phase commands wrap the whole lifecycle.",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "author": {
     "name": "Alexandre Brondel"
   },

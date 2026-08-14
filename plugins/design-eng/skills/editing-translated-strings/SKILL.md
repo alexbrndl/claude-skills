@@ -1,6 +1,6 @@
 ---
 name: editing-translated-strings
-description: Change user-facing copy in a product where the same string exists in several languages. Use whenever the task touches a label, button, error message, empty state, tooltip or email subject in a project that has locale files, translation keys, or an i18n setup. Also use when the user rewrites one language and forgets the others, when a key is about to be added, or when a string turns out to be hardcoded instead of translated. Not for writing the copy itself from scratch, and not for choosing an i18n framework.
+description: Change user-facing copy in a product where the same string exists in several languages. Use whenever the task touches a label, button, error message, empty state, tooltip or email subject in a project that has locale files, translation keys, or an i18n setup. Also use when the user rewrites one language and forgets the others, when a key is about to be added to copy that already exists in other locales, or when a string turns out to be hardcoded instead of translated. Not for writing the copy itself from scratch, and not for choosing an i18n framework.
 ---
 
 # Editing copy that exists in several languages
