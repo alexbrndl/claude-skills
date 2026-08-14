@@ -27,7 +27,13 @@ Guessing was tried twice and measured twice, on a repository with 67 project ski
 - open-pr — replaces git-workflow-and-versioning
 ```
 
-Take the sections matching the phases in `$ARGUMENTS`. A line runs after the library skills of that phase. `— replaces <library-skill>` drops that library skill from the command: the project's version owns the moment. Anything not listed does not run, whatever its description says.
+Take the sections matching the phases in `$ARGUMENTS`.
+
+A line marked `— replaces <library-skill>` **takes that skill's slot**, at its position in the command, and the library skill is dropped. Owning the moment means owning the position: a skill whose job is to search before code is written cannot do it once the code exists, which is what happens if you append it at the end.
+
+A line with no `— replaces` has no slot to inherit, so it runs after the library skills of its phase, in the order the file lists them.
+
+Anything not listed does not run, whatever its description says.
 
 Check every name resolves before running anything:
 

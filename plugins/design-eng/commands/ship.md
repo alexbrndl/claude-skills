@@ -8,7 +8,7 @@ Ship: $ARGUMENTS
 
 ## First
 
-0. `/including-project-skills Ship`. If this repository declares a map of its own skills in `.claude/design-eng.md`, the ones it lists for this phase run after the library's, and a line marked `— replaces` drops the library skill it names. No map means nothing is added: do not infer one.
+0. `/including-project-skills Ship`. If this repository declares a map of its own skills in `.claude/design-eng.md`, the ones it lists for this phase run in the order the file lists them, and a line marked `— replaces` takes the slot of the library skill it names instead of being appended at the end. No map means nothing is added: do not infer one.
 
 ## Get it out
 

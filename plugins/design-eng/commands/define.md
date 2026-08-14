@@ -10,7 +10,7 @@ Stop at the first step that produces a question only I can answer, ask it, and w
 
 ## First
 
-0. `/including-project-skills Define Plan`. If this repository declares a map of its own skills in `.claude/design-eng.md`, the ones it lists for these phases run after the library's, and a line marked `— replaces` drops the library skill it names. No map means nothing is added: do not infer one.
+0. `/including-project-skills Define Plan`. If this repository declares a map of its own skills in `.claude/design-eng.md`, the ones it lists for these phases run in the order the file lists them, and a line marked `— replaces` takes the slot of the library skill it names instead of being appended at the end. No map means nothing is added: do not infer one.
 
 ## Define
 
